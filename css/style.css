@@ -827,12 +827,28 @@ html, body {
   height: 48px;
   border: 1px solid #666;
   border-radius: 50%;
+  transition: all 0.3s linear;
 }
 
 .footer .social__link a {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.footer .social__link a svg {
+  fill: #fff;
+  transition: all 0.3s linear;
+}
+
+.footer .social__link:hover {
+  border: 1px solid #9D8665;
+}
+
+.footer .social__link:hover a svg {
+  fill: #9D8665;
 }
 
 .last-string {

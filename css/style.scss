@@ -651,10 +651,23 @@ html,body {
         height: 48px;
         border: 1px solid #666;
         border-radius: 50%;
+        transition: all 0.3s linear;
         a {
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        a svg {
+            fill: #fff;
+            transition: all 0.3s linear;
+        }
+    }
+    .social__link:hover {
+        border: 1px solid #9D8665;
+        a svg {
+            fill: #9D8665;
         }
     }
 }
