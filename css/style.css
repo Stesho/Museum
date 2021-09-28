@@ -294,11 +294,14 @@ html, body {
 
 .welcom .welcom-container .welcom__switcher .welcom__arrows {
   display: flex;
-  font-size: 30px;
-  cursor: pointer;
 }
 
 .welcom .welcom-container .welcom__switcher .welcom__arrows .welcom__arrows_left, .welcom .welcom-container .welcom__switcher .welcom__arrows .welcom__arrows_right {
+  padding: 0 0 3px 0;
+  font-size: 30px;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
   transition: all 0.1s linear;
 }
 
@@ -432,6 +435,57 @@ html, body {
   margin: 0 0 40px 0;
 }
 
+.video-journey .video-journey__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 30px;
+  background-color: #000;
+}
+
+.video-journey .video-journey__bar svg {
+  fill: #B3B3B3;
+}
+
+.video-journey .video-journey__bar .video-journey__play-button {
+  width: 23px;
+  height: 31px;
+  cursor: pointer;
+}
+
+.video-journey .video-journey__bar .bar__range-button {
+  height: 8px;
+  width: 929px;
+  background: linear-gradient(to right, #710707 0%, #710707 50%, #C4C4C4 50%, #C4C4C4 100%);
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+.video-journey .video-journey__bar .volume {
+  width: 155px;
+}
+
+.video-journey .video-journey__bar .bar__range-button::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.video-journey .video-journey__bar .video-journey__volume-button {
+  width: 38px;
+  height: 31px;
+  cursor: pointer;
+}
+
+.video-journey .video-journey__bar .video-journey__size-button {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
 .video-journey .video-journey__video-slider {
   display: flex;
   justify-content: space-between;
@@ -464,8 +518,6 @@ html, body {
   align-items: center;
   width: 100%;
   max-width: 200px;
-  font-size: 25px;
-  color: #999;
 }
 
 .video-journey .video-journey__switcher .video-journey__dots .video-journey__dot {
@@ -486,6 +538,10 @@ html, body {
 }
 
 .video-journey .video-journey__switcher .video-journey__dots .video-journey__arrow {
+  padding: 0 0 3px 0;
+  font-size: 25px;
+  color: #999;
+  background-color: #fff;
   cursor: pointer;
 }
 
@@ -621,9 +677,13 @@ html, body {
   height: 50px;
   padding: 12px 14px;
   margin: 15px 0 0 0;
-  font-size: 32px;
   font-weight: 400;
   border: 3px solid #000;
+}
+
+.buy-tickets .buy-tickets__count button {
+  background-color: #fff;
+  font-size: 32px;
 }
 
 .buy-tickets .buy-tickets__count span {
@@ -749,6 +809,11 @@ html, body {
 
 .footer .footer__social {
   display: flex;
+  align-items: flex-end;
+}
+
+.footer .footer__social ul {
+  display: flex;
   justify-content: space-between;
   align-items: flex-end;
   width: 340px;
@@ -764,8 +829,10 @@ html, body {
   border-radius: 50%;
 }
 
-.footer .social__link img {
-  height: 16px;
+.footer .social__link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .last-string {
@@ -808,7 +875,7 @@ html, body {
   max-width: 1440px;
   left: 0;
   background-color: #fff;
-  opacity: 0.2;
+  opacity: 0;
   cursor: default;
   transition: all 0.5s linear;
 }

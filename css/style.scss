@@ -189,9 +189,13 @@ html,body {
             }
             .welcom__arrows {
                 display: flex;
-                font-size: 30px;
-                cursor: pointer;
                 .welcom__arrows_left, .welcom__arrows_right {
+                    padding: 0 0 3px 0;
+                    font-size: 30px;
+                    color: #fff;
+                    background-color: #000;
+                    cursor: pointer;
+
                     transition: all 0.1s linear;
                 }
                 .welcom__arrows_left {
@@ -306,6 +310,49 @@ html,body {
         width: 1440px;
         margin: 0 0 40px 0;
     }
+    .video-journey__bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 30px;
+        background-color: #000;
+        svg {
+            fill:#B3B3B3;
+        }
+        .video-journey__play-button {
+            width: 23px;
+            height: 31px;
+            cursor: pointer;
+        }
+        .bar__range-button {
+            height: 8px;
+            width: 929px;
+            background: linear-gradient(to right, #710707 0%, #710707 50%, #C4C4C4 50%, #C4C4C4 100%);
+            transition: background 450ms ease-in;
+            -webkit-appearance: none;
+        }
+        .volume {
+            width: 155px;
+        }
+        .bar__range-button::-webkit-slider-thumb {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #fff;
+            -webkit-appearance: none;
+            cursor: pointer;
+        }
+        .video-journey__volume-button {
+            width: 38px;
+            height: 31px;
+            cursor: pointer;
+        }
+        .video-journey__size-button {
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+        }
+    }
     .video-journey__video-slider {
         display: flex;
         justify-content: space-between;
@@ -333,8 +380,6 @@ html,body {
             align-items: center;
             width: 100%;
             max-width: 200px;
-            font-size: 25px;
-            color: #999;
             .video-journey__dot {
                 width: 12px;
                 height: 12px;
@@ -353,6 +398,10 @@ html,body {
             }
 
             .video-journey__arrow {
+                padding: 0 0 3px 0;
+                font-size: 25px;
+                color: #999;
+                background-color: #fff;
                 cursor: pointer;
             }
             .video-journey__arrow:hover {
@@ -471,9 +520,12 @@ html,body {
         height: 50px;
         padding: 12px 14px;
         margin: 15px 0 0 0;
-        font-size: 32px;
         font-weight: 400;
         border: 3px solid #000;
+        button {
+            background-color: #fff;
+            font-size: 32px;
+        }
         span {
             font-size: 22px;
         }
@@ -583,9 +635,13 @@ html,body {
     
     .footer__social {
         display: flex;
-        justify-content: space-between;
         align-items: flex-end;
-        width: 340px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 340px;
+        }
     }
     .social__link {
         display: flex;
@@ -595,8 +651,10 @@ html,body {
         height: 48px;
         border: 1px solid #666;
         border-radius: 50%;
-        img {
-            height: 16px;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
