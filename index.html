@@ -200,7 +200,7 @@
                         </div>
                     </div>
                     <div class="video-journey__video">
-                        <button><a href="https://youtu.be/zp1BXPX8jcU" target="_blank"><img src="./assets/img/video-journey/Main-video.png" alt="video" ></a></button>
+                        <a href="https://youtu.be/zp1BXPX8jcU" target="_blank"><img src="./assets/img/video-journey/Main-video.png" alt="video" ></a>
                         <div class="video-journey__bar">
                             <div class="video-journey__play-button">
                                 <svg width="23" height="31" viewBox="0 0 23 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -227,9 +227,9 @@
                         </div>
                     </div>
                     <div class="video-journey__video-slider">
-                        <button><a href="https://youtu.be/Vi5D6FKhRmo" class="video-journey__slider-item"><img src="./assets/img/video-journey/Video-slide-item-1.png" alt="video review"></a></button>
-                        <button><a href="https://youtu.be/NOhDysLnTvY" class="video-journey__slider-item"><img src="./assets/img/video-journey/Video-slide-item-2.png" alt="video review"></a></button>
-                        <button><a href="https://youtu.be/aWmJ5DgyWPI" class="video-journey__slider-item"><img src="./assets/img/video-journey/Video-slide-item-3.png" alt="video review"></a></button>
+                        <a href="https://youtu.be/Vi5D6FKhRmo" class="video-journey__slider-item"><img src="./assets/img/video-journey/Video-slide-item-1.png" alt="video review"></a>
+                        <a href="https://youtu.be/NOhDysLnTvY" class="video-journey__slider-item"><img src="./assets/img/video-journey/Video-slide-item-2.png" alt="video review"></a>
+                        <a href="https://youtu.be/aWmJ5DgyWPI" class="video-journey__slider-item"><img src="./assets/img/video-journey/Video-slide-item-3.png" alt="video review"></a>
                     </div>
                     
                     <div class="video-journey__switcher">
@@ -419,7 +419,7 @@
                         <input type="tel" placeholder="Phone">
                     </div>
                     <div class="ticket-type-field booking-tickets__field">
-                        <select name="">
+                        <select name="ticket-type">
                             <option value="">Ticket Type</option>
                             <option value="">Permanent exhibition</option>
                             <option value="">Temporary exhibition</option>
@@ -485,7 +485,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="./assets/img/booking-tickets/Rectangle 4.jpg" alt="night Louvre" class="booking-tickets__picture">
+                        <img src="./assets/img/booking-tickets/Rectangle.jpg" alt="night Louvre" class="booking-tickets__picture">
                     </div>
                     <div class="booking-tickets__price underline-title">
                         <div class="booking-tickets__basic">
@@ -515,18 +515,22 @@
                                 <span>Card number</span>
                                 <input type="number">
                             </label>
-                            <label class="expiration-date">
-                                <span>Expiration date</span><br>
-                                <input type="number" value="03">
-                                <input type="number" value="2024">
-                            </label>
+                            <div class="expiration-date">
+                                <label>
+                                    <div>Expiration date</div>
+                                    <input type="number" value="03">
+                                </label>
+                                <label>
+                                    <input type="number" value="2024">
+                                </label>
+                            </div>
                             <label class="cardholder-name">
-                                <span>Cardholder name</span><br>
+                                <div>Cardholder name</div>
                                 <input type="number">
                             </label>
                         </div>
                         <div class="booking-tickets__back-side-card">
-                            <label for="">
+                            <label>
                                 <span>CVC/CVV</span>
                                 <input type="text">
                                 <p>
