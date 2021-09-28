@@ -1035,13 +1035,26 @@ html,body {
                     }
                 }
                 .expiration-date {
+                    display: flex;
+                    flex-direction: column;
                     margin: 0 0 10px 0;
-                    div {
+                    span {
                         margin: 0 0 5px 0;
                     }
                     input {
+                        height: 35px;
                         width: 100px;
+                        padding: 15px 20px;
                         margin: 0 11px 0 0;
+                    }
+                }
+                .expiration-date {
+                    label {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    span {
+                        margin: 0 0 5px 0;
                     }
                 }
                 .cardholder-name {
