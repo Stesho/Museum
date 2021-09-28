@@ -752,12 +752,13 @@ html, body {
 .contacts .contacts__address {
   display: flex;
   flex-direction: column;
-  font-weight: 300;
-  line-height: 26px;
 }
 
-.contacts .contacts__address span {
+.contacts .contacts__address a {
+  font-weight: 300;
+  line-height: 26px;
   margin: 0 0 25px 0;
+  color: #000;
 }
 
 .contacts .contacts__map {
