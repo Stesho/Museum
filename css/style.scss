@@ -785,17 +785,17 @@ html,body {
         background-image: url("../assets/svg/arrow.svg");
     }
     .date-time__field::-webkit-datetime-edit-fields-wrapper {
-        // display: none;
+        display: none;
     }
     .date-field, .time-field {
         width: 190px;
     }
-    // .date-field::after {
-    //     content: "Date";
-    //     font-size: 18px;
-    //     line-height: 21px;  
-    //     color: #030303;
-    // }
+    .date-field::after {
+        content: "Date";
+        font-size: 18px;
+        line-height: 21px;  
+        color: #030303;
+    }
     .time-field::after {
         content: "Time";
         font-size: 18px;

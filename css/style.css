@@ -974,11 +974,18 @@ html, body {
 }
 
 .booking-tickets .date-time__field::-webkit-datetime-edit-fields-wrapper {
-  content: "hello";
+  display: none;
 }
 
 .booking-tickets .date-field, .booking-tickets .time-field {
   width: 190px;
+}
+
+.booking-tickets .date-field::after {
+  content: "Date";
+  font-size: 18px;
+  line-height: 21px;
+  color: #030303;
 }
 
 .booking-tickets .time-field::after {
