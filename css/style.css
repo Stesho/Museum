@@ -430,9 +430,23 @@ html, body {
 }
 
 .video-journey .video-journey__video {
+  position: relative;
   height: 735px;
   width: 1440px;
   margin: 0 0 45px 0;
+}
+
+.video-journey .video-journey__video a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  top: 0;
+  margin: 215px 0 0 610px;
+  background-image: url("../assets/svg/big-play-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .video-journey .video-journey__bar {
@@ -960,18 +974,11 @@ html, body {
 }
 
 .booking-tickets .date-time__field::-webkit-datetime-edit-fields-wrapper {
-  display: none;
+  content: "hello";
 }
 
 .booking-tickets .date-field, .booking-tickets .time-field {
   width: 190px;
-}
-
-.booking-tickets .date-field::after {
-  content: "Date";
-  font-size: 18px;
-  line-height: 21px;
-  color: #030303;
 }
 
 .booking-tickets .time-field::after {
